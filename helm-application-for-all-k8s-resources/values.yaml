@@ -192,8 +192,8 @@ deployment:
 
   # Image of the app container
   image: 
-    repository: repository/image-name
-    tag: ''
+    repository: gcr.io/kubernetes-e2e-test-images/echoserver
+    tag: 2.2
     digest: '' # if set to a non empty value, digest takes precedence on the tag
     pullPolicy: IfNotPresent
   dnsConfig:
