@@ -44,7 +44,7 @@ cronJob:
 ##########################################################
 deployment:
 
-  enabled: true
+  enabled: false
   # By default deploymentStrategy is set to rollingUpdate with maxSurge of 25% and maxUnavailable of 25%
   # You can change type to `Recreate` or can uncomment `rollingUpdate` specification and adjust them to your usage.
   strategy:
@@ -474,7 +474,7 @@ rbac:
 
   # Service Account to use by pods
   serviceAccount:
-    enabled: false
+    enabled: true
     name: ""
 
     # Additional Labels on service account
@@ -508,7 +508,7 @@ rbac:
 # Additional ConfigMaps
 ##########################################################
 configMap:
-  enabled: false
+  enabled: true
   additionalLabels: 
     # key: value
   annotations: 
@@ -569,7 +569,7 @@ secret:
 # Service Monitor to collect Prometheus metrices
 ##########################################################
 serviceMonitor:
-  enabled: false
+  enabled: true
   
   # Additional labels
   additionalLabels:
@@ -805,7 +805,7 @@ externalSecret:
 # Network Policy
 ##########################################################
 networkPolicy: 
-  enabled: false
+  enabled: true
   additionalLabels:
   #   key: value
   annotations:
