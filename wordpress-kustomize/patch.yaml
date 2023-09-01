@@ -4,6 +4,7 @@ metadata:
   name: wordpress
 spec:
   template:
+    replicas: 3
     spec:
       initContainers:
       - name: init-command
